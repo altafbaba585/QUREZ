@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qurez.com</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and max-width:  1170px"  href="css/phone.css">
+
+   
+</head>
+<style>
+    *{
+    margin:0;
+    padding:0;
+}
+:root{
+    --navbar-height:59px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position:relative;
+    top: 0px;
+}
+
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position:absolute;
+    top: 0px;
+    left:0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#logo{
+    margin:10px 34px;
+
+}
+#logo img{
+    height: 59px;
+    margin:3px 6px;
+}
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color:white;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 590px;
+    justify-content: center;
+    align-items: center;
+
+
+}
+#home::before{
+    content: "";
+    background:url('https://cdn.shopify.com/s/files/1/0097/4713/6608/files/Artboard_1_copy_2_cec912cd-0600-41a1-8467-5ac582927f25.jpg?v=1663042846&width=3840')no-repeat center center/cover;
+    position:absolute;
+    height: 100%;
+    top: 0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89; 
+}
+#home h1{
+    color:rgb(7 7 95);;
+    text-align:center;
+}
+#home p{
+    color:rgb(119, 95, 213);
+    text-align:center;
+    font-size: 1.5rem;
+}
+#services{
+    margin: 34px;
+    display: flex;
+}
+
+#services{}
+
+
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 30px;
+    border-radius: 28px;
+    background: rgb(220, 193, 193);  
+
+}
+#services.box img{
+    height: 100px;
+    margin: auto;
+    display: block;
+
+}
+
+
+#client-section{
+    position: relative;
+height: 344px;
+}
+
+
+#client-section::before{
+    content:  "";
+    position: absolute;
+    background:url('https://cdn.shopify.com/s/files/1/0097/4713/6608/files/new_bnners_openArtboard_12.jpg?v=1668332934&width=3840')no-repeat center center/cover;
+    width:100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    }
+    
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#client-item{
+}
+#client img{
+height:400px;
+}
+#contact{
+    position: relative;
+
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background:url('https://cdn.shopify.com/s/files/1/0097/4713/6608/files/new_bnners_openArtboard_12.jpg?v=1668332934&width=3840')no-repeat center center/cover;')no-repeat center center/cover;
+    
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+
+}
+#contact-box form{
+    width: 40%;
+
+}
+#contact-box label{
+    font-size: 1.3em;
+    
+}
+ 
+ footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+ }
+
+
+
+
+.h-primary{
+    font-family:   'Bree Serif',serif;
+    font-size: 3.8rem;
+    padding: 12px;
+
+
+}
+.h-secondary{
+    font-family:   'Bree Serif',serif;
+    font-size: 2.3rem;
+    padding: 12px;
+
+
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color:chocolate;
+    color: white;
+    margin:17px ;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+</style>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="https://cdn.shopify.com/s/files/1/0097/4713/6608/files/11Logo_1.png?v=1661956339" alt="qurez.com">
+        </div>
+        <ul>
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">Product</a></li>
+            <li class="item"><a href="#">About Us</a></li>
+            <li class="item"><a href="#">Blog</a></li>
+            <li class="item"><a href="#">Affilated</a></li>
+            <li class="item"><a href="#">Retail Prensence</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1 class="h-primary">
+            WELCOME TO QUREZ
+        </h1>
+        <p>Free Shipping on Orders above Rs 1000 </p>
+        <button class="btn">Order Now</button>
+
+    </section>
+
+
+    <section class="services-container">
+        <h1 class="h-primary center">our services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="https://cdn.shopify.com/s/files/1/0097/4713/6608/files/Artboard_14.jpg?v=1665497167&width=3840"
+                    height="500px" width="500px" alt="">
+                <h2 class="h-secondary center">Mineral Sunscreen</h2>
+                <p class="center">Absorbs quickly gives no white cast</p>
+                <h3>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Price=10$</h3>
+            </div>
+
+            <div class="box">
+                <img src="https://cdn.shopify.com/s/files/1/0097/4713/6608/files/Artboard_1_copy_2_cec912cd-0600-41a1-8467-5ac582927f25.jpg?v=1663042846&width=3840"
+                    height="500px" width="500px" alt="">
+                <h2 class="h-secondary center">Feel Pretty the Way You Are</h2>
+                <p class="center">Effective, Vegan, Natural products for your Skin & Body care</p>
+                <h3>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp Price=23$</h3>
+            </div>
+            <div class="box">
+                <img src="http://cdn.shopify.com/s/files/1/0097/4713/6608/products/5W7A2707_final_w.jpg?v=1650127132"
+                    height="500px" width="500px" alt="">
+                <h2 class="h-secondary center">Game changer for your Hair Care</h2>
+                <p class="center">Switch to Vegan Keratin Shampoo Bar and feel the differencet</p>
+                <h3>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Price=50$</h3>
+            </div>
+        </div>
+
+    </section>
+    <section id="client-section">
+        <h1 class="h-primary center">BEST SELLER</h1>
+        <div id="clients">
+            <div id="client-item">
+                <img src="http://cdn.shopify.com/s/files/1/0097/4713/6608/products/1_acd6e46d-523e-4360-883e-52afdddc7f37.jpg?v=1666078553
+            "
+                    height="200" width="200" alt="">
+                    <h6>Mattifying Tinted Sunscreen</h6>
+                    <h4><b>Rs 499.00</b></h4>
+
+
+            </div>
+            <div id="client-item">
+                <img src="https://cdn.shopify.com/s/files/1/0097/4713/6608/products/DSC_7936.jpg?v=1650127132&width=1445"
+                    height="200" width="200" alt="">
+                    <h6> Qurez Lavender and Keratin Shopmpoo</h6>
+                    <h4><b>Rs 225.00</b></h4>
+
+            </div>
+            <div id="client-item">
+                <img src="https://cdn.shopify.com/s/files/1/0097/4713/6608/products/5W7A2622_final_w.jpg?v=1650127484&width=533"
+                    height="200" width="200" alt="">
+                    <h6>Mattifying Minerals Sunscreen</h6>
+                    <h4><b>RS 450.00</b></h4>
+                    
+            </div>
+            <div id="client-item">
+                <img src="https://www.urbanmuni.com/assets/upload/CACHE/media/1000x1000/assets/product/product_image84866778520210719.jpg"
+                    height="200" width="200" alt="">
+                    <h6>Qurez Bakuchiol Face Oil</h6>
+                    <h4><b>RS 479.00</b></h4>
+
+            </div>
+            <div id="client-item">
+                <img src="https://cdn.shopify.com/s/files/1/0097/4713/6608/products/DSC_7600.jpg?v=1650126991&width=533"
+                    height="200" width="200" alt="">
+                    <h6>DE-Pigmenting Moisturizing</h6>
+                    <h4><b>RS 199.00</b></h4>
+
+            </div>
+            <div id="client-item">
+                <img src="https://cdn.shopify.com/s/files/1/0097/4713/6608/products/DSC_7942.jpg?v=1650128024&width=533"
+                    height="200" width="200" alt="">
+                    <h6>Qurez Neem Wood Comb</h6>
+                    <h4><b>RS 479.00</b></h4>
+
+            </div>
+        </div>
+        
+    </section>
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">NAME:</label>
+                    <input type="text" name ="name" id="name"placeholder="Enter Your Name ">
+                </div>
+                <div class="form-group">
+                    <label for="name">Email:</label>
+                    <input type="email" name ="name" id="email"placeholder="Enter Your Email id ">
+                </div>
+                <div class="form-group">
+                    <label for="name">Phone Number:</label>
+                    <input type="phone" name ="name" id="phone"placeholder="Enter Your :Phone number ">
+                </div>
+                <div class="form-group">
+                    <label for="Message">Message:</label>
+                    <textarea name="Message" id="Message" cols="30" rows="10"></textarea>
+                </div>
+            </form>
+            
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            copyright &copy;www.Qurez.com. All Rights Reserved !
+        </div>
+    </footer>
+
+</body>
+
+</html>
